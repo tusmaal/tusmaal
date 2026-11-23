@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import { useTheme } from '../../context/ThemeContext'
-import { Sun, Moon, Menu, X, ChevronRight, Mail } from 'lucide-react'
+import { Sun, Moon, Menu, X, ChevronRight, Mail, Phone } from 'lucide-react'
 import WhatsAppFloat from '../common/WhatsAppFloat.jsx'
 import BrandLogo from '../common/BrandLogo.jsx'
-import { BRAND } from '../../config/brandAssets'
+import { BRAND, CONTACT } from '../../config/brandAssets'
 import { WHATSAPP_HREF } from '../../utils/whatsapp'
 
 export function Navbar() {
@@ -138,8 +138,11 @@ export function Footer() {
 
           <div>
             <div className="pub-footer-col-title">Contact</div>
-            <a href="mailto:info@tusmaal.com" className="pub-footer-link pub-footer-contact">
-              <Mail size={13} /> info@tusmaal.com
+            <a href={`mailto:${CONTACT.email}`} className="pub-footer-link pub-footer-contact">
+              <Mail size={13} /> {CONTACT.email}
+            </a>
+            <a href={CONTACT.phoneTel} className="pub-footer-link pub-footer-contact">
+              <Phone size={13} /> {CONTACT.phone}
             </a>
             <a href={WHATSAPP_HREF} className="btn btn-secondary btn-sm pub-footer-wa">
               WhatsApp Us

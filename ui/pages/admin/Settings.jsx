@@ -282,10 +282,10 @@ export default function Settings() {
         <div className="card">
           <div className="card-body">
             <h3 style={{ fontSize: 16, marginBottom: 20 }}>Contact Information</h3>
-            {field('contact_email', 'Email', 'email', 'info@tusmaal.com')}
-            {field('contact_phone', 'Phone', 'tel', '')}
+            {field('contact_email', 'Email', 'email', 'info@tusmaalinstitute.org')}
+            {field('contact_phone', 'Phone', 'tel', '+252 61 7090076')}
             {field('contact_address', 'Address', 'text', 'Mogadishu, Somalia')}
-            {field('whatsapp_number', 'WhatsApp Number', 'tel')}
+            {field('whatsapp_number', 'WhatsApp Number', 'tel', '+252 61 7090076')}
           </div>
         </div>
 

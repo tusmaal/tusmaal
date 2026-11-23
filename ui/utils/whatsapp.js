@@ -1,4 +1,4 @@
-const DEFAULT_WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+const DEFAULT_WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+252 61 7090076';
 
 export const toWhatsAppUrl = (phone, message) => {
   const digits = String(phone || '').replace(/\D/g, '');

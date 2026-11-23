@@ -50,7 +50,7 @@ SELECT * FROM (VALUES
    'Contact our team and we''ll reset it for you. Always change your password after logging in for the first time.',
    'Account', 1),
   ('How can I contact Tusmaal?',
-   'Reach us on WhatsApp, email info@tusmaal.com, or from the contact page.',
+   'Reach us on WhatsApp or phone at +252 61 7090076, email info@tusmaalinstitute.org, or from the contact page.',
    'Account', 2)
 ) AS v(question, answer, category, order_index)
 WHERE NOT EXISTS (SELECT 1 FROM site_faqs);

@@ -48,8 +48,9 @@ CREATE TABLE IF NOT EXISTS site_settings (
 INSERT INTO site_settings (key, value) VALUES
   ('platform_name',    'Tusmaal'),
   ('platform_tagline', 'Quality Education for Everyone'),
-  ('contact_email',    'info@tusmaal.com'),
-  ('contact_phone',    ''),
+  ('contact_email',    'info@tusmaalinstitute.org'),
+  ('contact_phone',    '+252 61 7090076'),
+  ('whatsapp_number',  '+252 61 7090076'),
   ('contact_address',  'Mogadishu, Somalia'),
   ('hero_title',       'Learn New Skills Online'),
   ('hero_subtitle',    'Access quality courses taught by expert instructors'),

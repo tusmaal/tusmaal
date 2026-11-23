@@ -1,3 +1,9 @@
+export const CONTACT = {
+  email: 'info@tusmaalinstitute.org',
+  phone: '+252 61 7090076',
+  phoneTel: 'tel:+252617090076',
+};
+
 const BASE = '/ResourcesPhotos';
 
 const asset = name => `${BASE}/${encodeURIComponent(name)}`;

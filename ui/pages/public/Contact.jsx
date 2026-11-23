@@ -1,4 +1,5 @@
 import { WHATSAPP_HREF } from '../../utils/whatsapp'
+import { CONTACT } from '../../config/brandAssets'
 import { Link } from 'react-router-dom'
 import { Navbar, Footer } from '../../components/layout/PublicLayout.jsx'
 import { useSEO } from '../../hooks/useSEO'
@@ -49,7 +50,7 @@ export default function Contact() {
               </div>
               <h3 style={{ marginBottom: 8 }}>Email Support</h3>
               <p style={{ color: 'var(--text-muted)', marginBottom: 14 }}>Send us your questions anytime.</p>
-              <a href="mailto:info@tusmaal.com" className="pub-footer-link" style={{ marginBottom: 0 }}>info@tusmaal.com</a>
+              <a href={`mailto:${CONTACT.email}`} className="pub-footer-link" style={{ marginBottom: 0 }}>{CONTACT.email}</a>
             </div>
 
             <div className="card card-body">
@@ -58,6 +59,7 @@ export default function Contact() {
               </div>
               <h3 style={{ marginBottom: 8 }}>Call or WhatsApp</h3>
               <p style={{ color: 'var(--text-muted)', marginBottom: 14 }}>Fast replies for admissions and payments.</p>
+              <a href={CONTACT.phoneTel} className="pub-footer-link" style={{ marginBottom: 6 }}>{CONTACT.phone}</a>
               <a href={WHATSAPP_HREF} className="pub-footer-link" style={{ marginBottom: 0 }}>WhatsApp</a>
             </div>
 
