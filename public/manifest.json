@@ -1,0 +1,21 @@
+{
+  "short_name": "Tusmaal",
+  "name": "Tusmaal — Online Courses",
+  "description": "Somalia's Leading E-Learning Platform. Empowering the next generation with practical digital skills, expert-led learning, and recognized certifications.",
+  "icons": [
+    {
+      "src": "/ResourcesPhotos/tusmaal.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/ResourcesPhotos/tusmaal.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#15184b",
+  "background_color": "#f4f6fb"
+}
